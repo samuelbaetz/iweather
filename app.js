@@ -20,7 +20,10 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
 
         console.log(response)
         $("#test").html(response.name)
-
+        var tempF = (response.main.temp - 273.15) * 1.80 + 32;
+        var temp = $("<h3>").text(tempF)
+        var content = $("#test");
+        content.prepend(temp)
     });
 
 });
