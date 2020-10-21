@@ -69,13 +69,15 @@ $("#loc").on("click", function(){
                 $("#test").html(response.name)
                 var tempF = (response.main.temp - 273.15) * 1.80 + 32;
                 var hum = response.main.humidity
+                var wind = response.wind.speed
         var temp = $("<h3>").text(tempF.toFixed() + " degrees")
         var humid = $("<h5>").text("Humidity: " + hum + "%")
+        var windspeed = $("<h5>").text("Wind Speed: " + wind + " MPH")
         var content = $("#test");
         var humidity = $("#hum")
         content.prepend(temp)
         humidity.prepend(humid)
-
+        humidity.prepend(windspeed)        
         
             });
 
