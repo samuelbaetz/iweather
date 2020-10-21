@@ -56,7 +56,7 @@ $("#loc").on("click", function(){
                 console.log(response)
                 $("#test").html(response.name)
                 var tempF = (response.main.temp - 273.15) * 1.80 + 32;
-        var temp = $("<h3>").text(tempF.toFixed(2))
+        var temp = $("<h3>").text(tempF.toFixed())
         var content = $("#test");
         content.prepend(temp)
         
