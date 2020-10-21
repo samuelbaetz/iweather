@@ -84,9 +84,10 @@ $("#loc").on("click", function(){
         var windspeed = $("<h5>").text("Wind Speed: " + wind + " MPH")
         var content = $("#test");
         var humidity = $("#hum")
+        var winds = $("#windspeed")
         content.prepend(temp)
         humidity.prepend(humid)
-        humidity.prepend(windspeed)        
+        winds.prepend(windspeed)        
         
             });
 
