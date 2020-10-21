@@ -75,7 +75,7 @@ $("#loc").on("click", function(){
                 .then(function(response) {
             
                     console.log(response)
-                    $("#location").html(response.city.name)
+                    $(".location").html(response.city.name)
                     $("#date1").html(response.list[0].dt_txt)
                     $("#date2").html(response.list[7].dt_txt)
                     $("#date3").html(response.list[15].dt_txt)
