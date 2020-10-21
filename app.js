@@ -124,7 +124,7 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
             $("#hum5").html("Humidity: " + response.list[31].main.humidity + "%")
             $("#windspeed5").html("Wind Speed: " + response.list[31].wind.speed + " MPH")
         });
-        window.reload()
+        location.reload(); 
 });
 
 
