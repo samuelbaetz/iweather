@@ -1,13 +1,13 @@
 $( document ).ready(function() {
 
-
+    var drops = "";
+    var backDrops = "";
     var makeItRain = function() {
             
             
           
         var increment = 0;
-        var drops = "";
-        var backDrops = "";
+        
       
         while (increment < 100) {
           //couple random numbers to use for various randomizations
