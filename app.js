@@ -112,6 +112,9 @@ $("#loc").on("click", function(){
                     $("#date3").html(response.list[15].dt_txt)
                     $("#date4").html(response.list[23].dt_txt)
                     $("#date5").html(response.list[31].dt_txt)
+
+                    $("#hum1").html("Humidity: " + response.list[0].main.humidity + "%")
+                    $("#windspeed1").html("Wind Speed: " + response.list[0].wind.speed + " MPH")
                 });
 
 
