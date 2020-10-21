@@ -35,8 +35,7 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
         var content = $("#test");
         
         localStorage.setItem('city1', response.name)
-        var city1 = localStorage.getItem('city1')
-        $("#city1").text(city1)
+        
         
         content.prepend(temp)
     });
@@ -277,4 +276,7 @@ $(window).on('load', function() {
 
 
       }
+
+      var city1 = localStorage.getItem('city1')
+        $("#city1").text(city1)
  });
