@@ -65,7 +65,18 @@ $("#loc").on("click", function(){
         
             });
 
+            var queryURL = "https://api.openweathermap.org/data/2.5/forecast?"+ "lat=" + lat + "&lon=" + lon + "&appid=" + APIKey
 
+            $.ajax({
+                url: queryURL,
+                method: "GET"
+              })
+             
+                .then(function(response) {
+            
+                    console.log(response)
+                    
+                });
 
 
 
