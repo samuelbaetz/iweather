@@ -238,7 +238,7 @@ $("#loc").on("click", function(){
     $("#radarbutton1").on("click", function(){
         $('#radarmodal1').modal('show')
         var APIKey = "166a433c57516f51dfab1f7edaed8413";
-        var query = "https://tile.openweathermap.org/map/precipitation_new/0/20/40.png?appid=" + APIKey
+        var query = "https://tile.openweathermap.org/map/precipitation_new/5/20/40.png?appid=" + APIKey
         $.ajax({
             url: query,
             method: "GET"
