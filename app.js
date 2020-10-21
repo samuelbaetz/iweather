@@ -237,19 +237,19 @@ $("#loc").on("click", function(){
 
     $("#radarbutton1").on("click", function(){
         $('#radarmodal1').modal('show')
-        var APIKey = "166a433c57516f51dfab1f7edaed8413";
-        var query = "https://tile.openweathermap.org/map/precipitation_new/0/0/0.png?appid=" + APIKey
-        $.ajax({
-            url: query,
-            method: "GET"
-          })
+        // var APIKey = "166a433c57516f51dfab1f7edaed8413";
+        // var query = "https://tile.openweathermap.org/map/precipitation_new/0/0/0.png?appid=" + APIKey
+        // $.ajax({
+        //     url: query,
+        //     method: "GET"
+        //   })
          
-            .then(function(response) {
+        //     .then(function(response) {
         
-                $("#radarimg").attr("src", query);
+        //         $("#radarimg").attr("src", query);
                 
         
-            });
+        //     });
 
 
     })
@@ -342,7 +342,15 @@ $(window).on('load', function() {
                     $("#windspeed5").html("Wind Speed: " + response.list[31].wind.speed + " MPH")
                 });
 
+                let map;
 
+    function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: {lat, lon},
+    zoom: 8,
+  });
+}
+initMap()
 
 
 
