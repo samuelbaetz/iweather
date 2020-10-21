@@ -54,7 +54,7 @@ $("#loc").on("click", function(){
             .then(function(response) {
         
                 console.log(response)
-                
+                $("#test").html(response.name)
         
             });
 
