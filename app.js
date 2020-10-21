@@ -34,16 +34,19 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
         $("#windspeed").html("Wind Speed: " + wind + " MPH")
         var content = $("#test");
         
-        localStorage.setItem('city1', response.name)
+       
+
+        if ($("#search").val() === city1) {
+            localStorage.setItem('city1', response.name)
         var city1 = localStorage.getItem('city1')
         
         $("#city1").text(city1)
-
-        if ($("#search").val() !== city1) {
+            
+        } else {
             localStorage.setItem('city2', response.name)
             var city2 = localStorage.getItem('city2')
             $("#city2").text(city2)
-            
+
         }
         
         content.prepend(temp)
