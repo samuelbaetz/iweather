@@ -68,9 +68,14 @@ $("#loc").on("click", function(){
         $("#icon").attr("src", iconUrl);
                 $("#test").html(response.name)
                 var tempF = (response.main.temp - 273.15) * 1.80 + 32;
+                var hum = response.main.humidity
         var temp = $("<h3>").text(tempF.toFixed() + " degrees")
+        var humid = $("<h4>").text(hum + "%")
         var content = $("#test");
+        var humidity = $("#hum")
         content.prepend(temp)
+        humidity.prepend(humid)
+
         
             });
 
