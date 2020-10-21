@@ -19,7 +19,7 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
     .then(function(response) {
 
         console.log(response)
-        var iconCode = data.weather[0].icon;
+        var iconCode = response.weather[0].icon;
         console.log(iconCode)
         $("#test").html(response.name)
         var tempF = (response.main.temp - 273.15) * 1.80 + 32;
