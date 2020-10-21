@@ -20,14 +20,12 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
 
         console.log(response)
         
-        
+        console.log(response.weather[0].icon)
         $("#test").html(response.name)
         var tempF = (response.main.temp - 273.15) * 1.80 + 32;
         var temp = $("<h3>").text(tempF.toFixed() + " degrees")
         var content = $("#test");
         content.prepend(temp)
-
-        console.log('hey')
     });
 
 });
