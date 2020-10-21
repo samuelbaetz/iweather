@@ -39,6 +39,46 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
         content.prepend(temp)
     });
 
+    var queryURL2 = "https://api.openweathermap.org/data/2.5/forecast?" + "q=" + $("#search").val() + "&appid=" + APIKey
+    $.ajax({
+        url: queryURL2,
+        method: "GET"
+      })
+     
+        .then(function(response) {
+    
+            console.log(response)
+            console.log(response.list[0].weather[0].icon )
+            $(".location").html(response.city.name)
+            $("#icon1").attr("src", "http://openweathermap.org/img/w/" + response.list[0].weather[0].icon + ".png");
+            $("#icon2").attr("src", "http://openweathermap.org/img/w/" + response.list[7].weather[0].icon + ".png");
+
+            $("#icon3").attr("src", "http://openweathermap.org/img/w/" + response.list[15].weather[0].icon + ".png");
+            $("#icon4").attr("src", "http://openweathermap.org/img/w/" + response.list[23].weather[0].icon + ".png");
+            $("#icon5").attr("src", "http://openweathermap.org/img/w/" + response.list[31].weather[0].icon + ".png");
+
+            $("#date1").html(response.list[0].dt_txt)
+            $("#date2").html(response.list[7].dt_txt)
+            $("#date3").html(response.list[15].dt_txt)
+            $("#date4").html(response.list[23].dt_txt)
+            $("#date5").html(response.list[31].dt_txt)
+
+            $("#hum1").html("Humidity: " + response.list[0].main.humidity + "%")
+            $("#windspeed1").html("Wind Speed: " + response.list[0].wind.speed + " MPH")
+
+            $("#hum2").html("Humidity: " + response.list[7].main.humidity + "%")
+            $("#windspeed2").html("Wind Speed: " + response.list[7].wind.speed + " MPH")
+
+            $("#hum3").html("Humidity: " + response.list[15].main.humidity + "%")
+            $("#windspeed3").html("Wind Speed: " + response.list[15].wind.speed + " MPH")
+
+            $("#hum4").html("Humidity: " + response.list[23].main.humidity + "%")
+            $("#windspeed4").html("Wind Speed: " + response.list[23].wind.speed + " MPH")
+
+            $("#hum5").html("Humidity: " + response.list[31].main.humidity + "%")
+            $("#windspeed5").html("Wind Speed: " + response.list[31].wind.speed + " MPH")
+        });
+
 });
 
 
