@@ -181,7 +181,7 @@ $("#loc").on("click", function(){
     
     })
     $(window).on('load', function() { 
-        console.log("here!")
+       alert("here!")
     });
     
 
