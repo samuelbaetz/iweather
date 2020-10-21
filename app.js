@@ -75,7 +75,7 @@ $("#loc").on("click", function(){
                 .then(function(response) {
             
                     console.log(response)
-                    
+                    $("#date1").html(response.list[0].dt_txt)
                 });
 
 
