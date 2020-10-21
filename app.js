@@ -20,7 +20,7 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
 
         console.log(response)
         
-        console.log(response.weather)
+        
         $("#test").html(response.name)
         var tempF = (response.main.temp - 273.15) * 1.80 + 32;
         var temp = $("<h3>").text(tempF.toFixed() + " degrees")
@@ -77,6 +77,7 @@ $("#loc").on("click", function(){
                 .then(function(response) {
             
                     console.log(response)
+                    console.log(response.weather)
                     $(".location").html(response.city.name)
                     $("#date1").html(response.list[0].dt_txt)
                     $("#date2").html(response.list[7].dt_txt)
