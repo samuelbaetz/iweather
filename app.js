@@ -98,6 +98,7 @@ $("#loc").on("click", function(){
                 .then(function(response) {
             
                     console.log(response)
+                    console.log(response.list[0].weather[0].icon )
                     $(".location").html(response.city.name)
                     $("#icon1").attr("src", "http://openweathermap.org/img/w/" + response.list[0].weather[0].icon + ".png");
                     $("#date1").html(response.list[0].dt_txt)
