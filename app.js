@@ -246,7 +246,7 @@ $("#loc").on("click", function(){
          
             .then(function(response) {
         
-             console.log(response)
+                $("#radarimg").attr("src", response);
                 
         
             });
