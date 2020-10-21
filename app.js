@@ -34,7 +34,7 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
         $("#windspeed").html("Wind Speed: " + wind + " MPH")
         var content = $("#test");
         
-        
+        localStorage.setItem('city', response.name)
         
         content.prepend(temp)
     });
