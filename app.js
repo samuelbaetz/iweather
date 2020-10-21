@@ -39,12 +39,12 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
         
         $("#city1").text(city1)
 
-        
+        if ($("#search").val() = city1) {
             localStorage.setItem('city2', response.name)
             var city2 = localStorage.getItem('city2')
             $("#city2").text(city2)
             
-        
+        }
         
         content.prepend(temp)
     });
