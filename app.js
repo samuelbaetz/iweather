@@ -25,9 +25,18 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
         $("#icon").attr("src", iconUrl);
         console.log(iconCode)
         $("#test").html(response.name)
+        var hum = response.main.humidity
+                var wind = response.wind.speed
         var tempF = (response.main.temp - 273.15) * 1.80 + 32;
         var temp = $("<h3>").text(tempF.toFixed() + " degrees")
         var content = $("#test");
+        var humid = $("<h5>").text("Humidity: " + hum + "%")
+        var windspeed = $("<h5>").text("Wind Speed: " + wind + " MPH")
+        var content = $("#test");
+        var humidity = $("#hum")
+        
+        humidity.prepend(humid)
+        humidity.prepend(windspeed) 
         content.prepend(temp)
     });
 
