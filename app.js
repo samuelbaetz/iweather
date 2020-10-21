@@ -30,13 +30,12 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
         var tempF = (response.main.temp - 273.15) * 1.80 + 32;
         var temp = $("<h3>").text(tempF.toFixed() + " degrees")
         var content = $("#test");
-        var humid = $("<h5>").text("Humidity: " + hum + "%")
-        var windspeed = $("<h5>").text("Wind Speed: " + wind + " MPH")
+        $("#hum").text("Humidity: " + hum + "%")
+        $("#windspeed").html("Wind Speed: " + wind + " MPH")
         var content = $("#test");
-        var humidity = $("#hum")
         
-        humidity.prepend(humid)
-        humidity.prepend(windspeed) 
+        
+        
         content.prepend(temp)
     });
 
@@ -80,14 +79,12 @@ $("#loc").on("click", function(){
                 var hum = response.main.humidity
                 var wind = response.wind.speed
         var temp = $("<h3>").text(tempF.toFixed() + " degrees")
-        var humid = $("<h5>").text("Humidity: " + hum + "%")
-        var windspeed = $("<h5>").text("Wind Speed: " + wind + " MPH")
+        $("#hum").html("Humidity: " + hum + "%")
+        $("#windspeed").html("Wind Speed: " + wind + " MPH")
         var content = $("#test");
-        var humidity = $("#hum")
-        var winds = $("#windspeed")
+        
         content.prepend(temp)
-        humidity.prepend(humid)
-        winds.prepend(windspeed)        
+                
         
             });
 
