@@ -101,6 +101,12 @@ $("#loc").on("click", function(){
                     console.log(response.list[0].weather[0].icon )
                     $(".location").html(response.city.name)
                     $("#icon1").attr("src", "http://openweathermap.org/img/w/" + response.list[0].weather[0].icon + ".png");
+                    $("#icon2").attr("src", "http://openweathermap.org/img/w/" + response.list[7].weather[0].icon + ".png");
+
+                    $("#icon3").attr("src", "http://openweathermap.org/img/w/" + response.list[15].weather[0].icon + ".png");
+                    $("#icon4").attr("src", "http://openweathermap.org/img/w/" + response.list[23].weather[0].icon + ".png");
+                    $("#icon5").attr("src", "http://openweathermap.org/img/w/" + response.list[31].weather[0].icon + ".png");
+
                     $("#date1").html(response.list[0].dt_txt)
                     $("#date2").html(response.list[7].dt_txt)
                     $("#date3").html(response.list[15].dt_txt)
