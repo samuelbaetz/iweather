@@ -237,6 +237,20 @@ $("#loc").on("click", function(){
 
     $("#radarbutton1").on("click", function(){
         $('#radarmodal1').modal('show')
+        var APIKey = "166a433c57516f51dfab1f7edaed8413";
+        var query = "https://tile.openweathermap.org/map/{layer}/{10}/{0}/{0}.png?appid=" + APIKey
+        $.ajax({
+            url: query,
+            method: "GET"
+          })
+         
+            .then(function(response) {
+        
+             console.log(response)
+                
+        
+            });
+
 
     })
     
