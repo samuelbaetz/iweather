@@ -236,7 +236,7 @@ $("#loc").on("click", function(){
 
 
     $("#radarbutton1").on("click", function(){
-        $('#radarmodal1').modal(show)
+        $('#radarmodal1').modal('show')
 
     })
     
