@@ -180,10 +180,11 @@ $("#loc").on("click", function(){
    
     
     })
-    $(window).on('load', function() { 
-       alert("here!")
-    });
+    
     
 
 });
 
+$(window).on('load', function() { 
+    alert("here!")
+ });
