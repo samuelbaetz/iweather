@@ -76,6 +76,10 @@ $("#loc").on("click", function(){
             
                     console.log(response)
                     $("#date1").html(response.list[0].dt_txt)
+                    $("#date2").html(response.list[7].dt_txt)
+                    $("#date3").html(response.list[15].dt_txt)
+                    $("#date4").html(response.list[23].dt_txt)
+                    $("#date5").html(response.list[31].dt_txt)
                 });
 
 
