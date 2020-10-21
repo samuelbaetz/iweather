@@ -78,6 +78,8 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
 
         if(response.weather[0].main === "Rain") {
             makeItRain()
+        } else {
+            return;
         }
         
         content.prepend(temp)
@@ -168,6 +170,12 @@ $("#loc").on("click", function(){
         var content = $("#test");
         
         content.prepend(temp)
+
+        if(response.weather[0].main === "Rain") {
+            makeItRain()
+        } else {
+            return;
+        }
                 
         
             });
