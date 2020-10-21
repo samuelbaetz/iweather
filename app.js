@@ -43,9 +43,9 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
             localStorage.setItem('city2', response.name)
             var city2 = localStorage.getItem('city2')
             $("#city2").text(city2)
-            console.log(city2)
+            
         }
-        
+        console.log(city2)
         content.prepend(temp)
     });
 
