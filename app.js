@@ -19,8 +19,9 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
     .then(function(response) {
 
         console.log(response)
-        var iconUrl = "http://openweathermap.org/img/w/" + iconCode + ".png";
         var iconCode = response.weather[0].icon;
+        var iconUrl = "http://openweathermap.org/img/w/" + iconCode + ".png";
+        
         $("#icon").html("<img src='" + iconUrl  + "'>");
         console.log(iconCode)
         $("#test").html(response.name)
