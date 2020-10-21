@@ -161,3 +161,14 @@
   body.single-toggle .drop:nth-child(10) {
     display: block;
   }
+
+  html {
+    height: 100%;
+  }
+  
+  body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #202020, #111119);
+  }
