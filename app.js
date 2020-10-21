@@ -3,7 +3,7 @@ $( document ).ready(function() {
     
 
 $("#click").on("click", function(){
-    console.log("hey")
+    
 
 
 var APIKey = "166a433c57516f51dfab1f7edaed8413";
@@ -19,8 +19,10 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
     .then(function(response) {
 
         console.log(response)
-        
-        console.log(response.weather[0].icon)
+        var iconUrl = "http://openweathermap.org/img/w/" + iconCode + ".png";
+        var iconCode = response.weather[0].icon;
+        $(".icon").html("<img src='" + iconUrl  + "'>");
+        console.log(iconCode)
         $("#test").html(response.name)
         var tempF = (response.main.temp - 273.15) * 1.80 + 32;
         var temp = $("<h3>").text(tempF.toFixed() + " degrees")
