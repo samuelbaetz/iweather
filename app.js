@@ -62,6 +62,10 @@ $("#loc").on("click", function(){
             .then(function(response) {
         
                 console.log(response)
+                var iconCode = response.weather[0].icon;
+        var iconUrl = "http://openweathermap.org/img/w/" + iconCode + ".png";
+        console.log(iconUrl)
+        $("#icon").attr("src", iconUrl);
                 $("#test").html(response.name)
                 var tempF = (response.main.temp - 273.15) * 1.80 + 32;
         var temp = $("<h3>").text(tempF.toFixed() + " degrees")
