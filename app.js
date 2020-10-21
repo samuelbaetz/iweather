@@ -42,7 +42,7 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
         if ($("#search").val() = city2) {
             localStorage.setItem('city2', response.name)
             var city2 = localStorage.getItem('city2')
-            $("#city2").text(city2)
+            $("#city2").html(city2)
             
         }
         
