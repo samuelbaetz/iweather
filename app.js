@@ -354,8 +354,8 @@ $(window).on('load', function() {
 var clouds = L.OWM.clouds({showLegend: false, opacity: 0.5, appId: '166a433c57516f51dfab1f7edaed8413'});
 var city = L.OWM.current({intervall: 15, lang: 'en'});
 var overlayMaps = { "Clouds": clouds, "Cities": city };
-var baseMaps = { "OSM Standard": osm };
-var layerControl = L.control.layers(baseMaps, overlayMaps).addTo(map);
+
+var layerControl = L.control.layers(overlayMaps).addTo(map);
 
 
 
