@@ -326,6 +326,9 @@ $(window).on('load', function() {
                     $("#date4").html(response.list[23].dt_txt)
                     $("#date5").html(response.list[31].dt_txt)
 
+                    var tempF1 = (response.list[0].main.temp - 273.15) * 1.80 + 32;
+                    $("#temp1").html(tempF1.toFixed() + " degrees")
+
                     $("#hum1").html("Humidity: " + response.list[0].main.humidity + "%")
                     $("#windspeed1").html("Wind Speed: " + response.list[0].wind.speed + " MPH")
 
