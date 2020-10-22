@@ -376,6 +376,7 @@ $(window).on('load', function() {
         zoomOffset: -1,
         accessToken: 'pk.eyJ1Ijoic2FtdWVsYmFldHoiLCJhIjoiY2tnazU0aXJuMGpsMDJ0cWVqNnMyOHk1cyJ9.QIb_1jwmN4U4CkHqzIIAgg'
         }).addTo(mymap1);
+        var precipitation = L.OWM.precipitation({appId: '166a433c57516f51dfab1f7edaed8413'});
     }
         })
 
