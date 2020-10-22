@@ -327,7 +327,18 @@ $(window).on('load', function() {
                     $("#date5").html(response.list[31].dt_txt)
 
                     var tempF1 = (response.list[0].main.temp - 273.15) * 1.80 + 32;
-                    $("#temp1").html(tempF1.toFixed() + " degrees")
+                    $("#temp1").html(tempF1.toFixed() + "F " + " degrees")
+
+                    var tempF2 = (response.list[7].main.temp - 273.15) * 1.80 + 32;
+                    $("#temp2").html(tempF2.toFixed() + "F " + " degrees")
+
+                    var tempF3 = (response.list[15].main.temp - 273.15) * 1.80 + 32;
+                    $("#temp3").html(tempF3.toFixed() + "F " + " degrees")
+
+                    var tempF4 = (response.list[23].main.temp - 273.15) * 1.80 + 32;
+                    $("#temp4").html(tempF4.toFixed() + "F " + " degrees")
+                    var tempF5 = (response.list[31].main.temp - 273.15) * 1.80 + 32;
+                    $("#temp5").html(tempF5.toFixed() + "F " + " degrees")
 
                     $("#hum1").html("Humidity: " + response.list[0].main.humidity + "%")
                     $("#windspeed1").html("Wind Speed: " + response.list[0].wind.speed + " MPH")
