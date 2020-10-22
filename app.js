@@ -350,7 +350,6 @@ $(window).on('load', function() {
                     zoom: 8,
                   });
                 }
-}
 
 
 
