@@ -386,7 +386,7 @@ var layerControl = L.control.layers(overlayMaps).addTo(mymap);
 var precipitation = L.OWM.precipitation({appId: '166a433c57516f51dfab1f7edaed8413'});
 var overlayMaps = { "Clouds": clouds, "Rain": precipitation };
 
-var layerControl = L.control.layers(overlayMaps).addTo(mymap);
+var layerControl = L.control.layers(overlayMaps).addTo(mymap1);
         
         
     }
