@@ -235,11 +235,10 @@ $("#loc").on("click", function(){
     })
 
 
-    $("#radarbutton1").on("click", function(){
-        $('#radarmodal1').modal('show')
+    
         
 
-    })
+    
     
     
 
@@ -347,7 +346,24 @@ $(window).on('load', function() {
       var city1 = localStorage.getItem('city1')
         $("#city1").text(city1)
 
+        $("#radarbutton1").on("click", function(){
+            navigator.geolocation.getCurrentPosition(showPosition)
 
+            function showPosition(position) {
+                var lat = position.coords.latitude
+                 var lon = position.coords.longitude
+            $('#radarmodal1').modal('show')
+            var mymap = L.map('mapid').setView([lat, lon], 13);
+            L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        maxZoom: 18,
+        id: 'mapbox/streets-v11',
+        tileSize: 512,
+        zoomOffset: -1,
+        accessToken: 'pk.eyJ1Ijoic2FtdWVsYmFldHoiLCJhIjoiY2tnazU0aXJuMGpsMDJ0cWVqNnMyOHk1cyJ9.QIb_1jwmN4U4CkHqzIIAgg'
+        }).addTo(mymap);
+    }
+        })
 
 
     
