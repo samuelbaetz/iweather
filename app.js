@@ -355,7 +355,7 @@ var clouds = L.OWM.clouds({showLegend: false, opacity: 0.5, appId: '166a433c5751
 var city = L.OWM.current({intervall: 15, lang: 'en'});
 var overlayMaps = { "Clouds": clouds, "Cities": city };
 
-var layerControl = L.control.layers(overlayMaps).addTo(map);
+var layerControl = L.control.layers(overlayMaps).addTo(mymap);
 
 
 
