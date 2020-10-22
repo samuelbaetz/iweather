@@ -366,7 +366,7 @@ var layerControl = L.control.layers(overlayMaps).addTo(mymap);
       var city1 = localStorage.getItem('city1')
         $("#city1").text(city1)
 
-        $("#radarbutton1").on("click", function(){
+        $(".radarbutton").on("click", function(){
             navigator.geolocation.getCurrentPosition(showPosition)
 
             function showPosition(position) {
