@@ -353,7 +353,7 @@ $(window).on('load', function() {
                 var lat = position.coords.latitude
                  var lon = position.coords.longitude
             $('#radarmodal1').modal('show')
-            var mymap = L.map('mapid2').setView([lat, lon], 13);
+            var mymap1 = L.map('mapid2').setView([lat, lon], 13);
             L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
         attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
         maxZoom: 18,
@@ -361,7 +361,7 @@ $(window).on('load', function() {
         tileSize: 512,
         zoomOffset: -1,
         accessToken: 'pk.eyJ1Ijoic2FtdWVsYmFldHoiLCJhIjoiY2tnazU0aXJuMGpsMDJ0cWVqNnMyOHk1cyJ9.QIb_1jwmN4U4CkHqzIIAgg'
-        }).addTo(mymap);
+        }).addTo(mymap1);
     }
         })
 
