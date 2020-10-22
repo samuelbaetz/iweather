@@ -62,6 +62,8 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
         var content = $("#test");
         var lat = response.coord.lat
         var lon = response.coord.lon
+        console.log(lat, lon)
+    
 
         var mymap = L.map('mapid').setView([lat, lon], 13);
             L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
