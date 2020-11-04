@@ -79,8 +79,8 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
         if ($("#search").val()) {
             localStorage.setItem('city1', response.name)
         var city1 = localStorage.getItem('city1')
-        $('.newcity').append(`<li class="nav-item">${city1}</li>`)
-            .addclass("nav-item")
+        $('.newcity').append(`<li class="nav-item"><a class="nav-link" href="#">${city}</a></li>`)
+            
         
         }   
         // } else {
