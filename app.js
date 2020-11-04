@@ -25,6 +25,10 @@ $( document ).ready(function() {
         $('.rain').append(drops);
         $('.rain').append(backDrops);
       }
+
+      var cities = [
+
+    ]
      
     
     
@@ -75,9 +79,7 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
         // accessToken: 'pk.eyJ1Ijoic2FtdWVsYmFldHoiLCJhIjoiY2tnazU0aXJuMGpsMDJ0cWVqNnMyOHk1cyJ9.QIb_1jwmN4U4CkHqzIIAgg'
         // }).addTo(mymap);
         
-        var cities = [
-
-        ]
+        
 
         
         
