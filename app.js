@@ -29,6 +29,8 @@ $( document ).ready(function() {
       var cities = [
 
     ]
+
+    localStorage.setItem("cities", JSON.stringify(cities))
      
     
     
