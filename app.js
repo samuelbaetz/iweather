@@ -88,8 +88,11 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
        var city = $('.city').append(`<button type="button" class="btn btn-success loc">${response.name}</button>`)
        
        localStorage.setItem('cities', city);
-       localStorage.getItem('cities')
+       var saved = localStorage.getItem('cities')
         
+       if (saved) {
+        $('.newcity') = saved;
+    }
         
 
         if(response.weather[0].main === "Rain") {
