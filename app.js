@@ -174,15 +174,15 @@ $("#loc").on("click", function(){
                 var iconCode = response.weather[0].icon;
         var iconUrl = "http://openweathermap.org/img/w/" + iconCode + ".png";
         console.log(iconUrl)
-        $("#icon").attr("src", iconUrl);
-                $("#test").html(response.name)
+        $(".icon").attr("src", iconUrl);
+                $(".test").html(response.name)
                 var tempF = (response.main.temp - 273.15) * 1.80 + 32;
                 var hum = response.main.humidity
                 var wind = response.wind.speed
         var temp = $("<h3>").text(tempF.toFixed() + " degrees")
-        $("#hum").html("Humidity: " + hum + "%")
-        $("#windspeed").html("Wind Speed: " + wind + " MPH")
-        var content = $("#test");
+        $(".hum").html("Humidity: " + hum + "%")
+        $(".windspeed").html("Wind Speed: " + wind + " MPH")
+        var content = $(".test");
         
         content.prepend(temp)
 
@@ -286,15 +286,15 @@ $(window).on('load', function() {
                 var iconCode = response.weather[0].icon;
         var iconUrl = "http://openweathermap.org/img/w/" + iconCode + ".png";
         console.log(iconUrl)
-        $("#icon").attr("src", iconUrl);
-                $("#test").html(response.name)
+        $(".icon").attr("src", iconUrl);
+                $(".test").html(response.name)
                 var tempF = (response.main.temp - 273.15) * 1.80 + 32;
                 var hum = response.main.humidity
                 var wind = response.wind.speed
         var temp = $("<h3>").text(tempF.toFixed() + " degrees")
-        $("#hum").html("Humidity: " + hum + "%")
-        $("#windspeed").html("Wind Speed: " + wind + " MPH")
-        var content = $("#test");
+        $(".hum").html("Humidity: " + hum + "%")
+        $(".windspeed").html("Wind Speed: " + wind + " MPH")
+        var content = $(".test");
         
         content.prepend(temp)
                 
