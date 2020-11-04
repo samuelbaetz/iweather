@@ -124,20 +124,20 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
             $(".date4").html(response.list[23].dt_txt)
             $(".date5").html(response.list[31].dt_txt)
 
-            $(".hum1").html("Humidity: " + response.list[0].main.humidity + "%")
-            $(".windspeed1").html("Wind Speed: " + response.list[0].wind.speed + " MPH")
+            $(".hum1").text("Humidity: " + response.list[0].main.humidity + "%")
+            $(".windspeed1").text("Wind Speed: " + response.list[0].wind.speed + " MPH")
 
-            $(".hum2").html("Humidity: " + response.list[7].main.humidity + "%")
-            $(".windspeed2").html("Wind Speed: " + response.list[7].wind.speed + " MPH")
+            $(".hum2").text("Humidity: " + response.list[7].main.humidity + "%")
+            $(".windspeed2").text("Wind Speed: " + response.list[7].wind.speed + " MPH")
 
-            $(".hum3").html("Humidity: " + response.list[15].main.humidity + "%")
-            $(".windspeed3").html("Wind Speed: " + response.list[15].wind.speed + " MPH")
+            $(".hum3").text("Humidity: " + response.list[15].main.humidity + "%")
+            $(".windspeed3").text("Wind Speed: " + response.list[15].wind.speed + " MPH")
 
-            $(".hum4").html("Humidity: " + response.list[23].main.humidity + "%")
-            $(".windspeed4").html("Wind Speed: " + response.list[23].wind.speed + " MPH")
+            $(".hum4").text("Humidity: " + response.list[23].main.humidity + "%")
+            $(".windspeed4").text("Wind Speed: " + response.list[23].wind.speed + " MPH")
 
-            $(".hum5").html("Humidity: " + response.list[31].main.humidity + "%")
-            $(".windspeed5").html("Wind Speed: " + response.list[31].wind.speed + " MPH")
+            $(".hum5").text("Humidity: " + response.list[31].main.humidity + "%")
+            $(".windspeed5").text("Wind Speed: " + response.list[31].wind.speed + " MPH")
         });
         
 });
