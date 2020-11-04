@@ -31,7 +31,7 @@ $( document ).ready(function() {
     ]
 
     localStorage.setItem("cities", JSON.stringify(cities))
-     
+    var storedcities = JSON.parse(localStorage.getItem("cities"));
     
     
 
@@ -88,7 +88,7 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
         //     localStorage.setItem('city1', response.name)
         // var city1 = localStorage.getItem('city1')
         cities.push(response.name)
-        console.log(cities)
+        console.log(storedcities)
         $('.newcity').append().addClass('nav-item city')
         
             $('.city').append(`<button type="button" class="btn btn-success loc">${response.name}</button>`)
@@ -382,7 +382,7 @@ var layerControl = L.control.layers(overlayMaps).addTo(mymap);
 
       }
 
-      var city1 = localStorage.getItem('city1')
+      
         $("#city1").text(city1)
 
         $(".radarbutton").on("click", function(){
