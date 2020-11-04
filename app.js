@@ -74,7 +74,7 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
         // zoomOffset: -1,
         // accessToken: 'pk.eyJ1Ijoic2FtdWVsYmFldHoiLCJhIjoiY2tnazU0aXJuMGpsMDJ0cWVqNnMyOHk1cyJ9.QIb_1jwmN4U4CkHqzIIAgg'
         // }).addTo(mymap);
-        $('newcity').add('li').addClass('nav-item')
+        $('.newcity').add('li').addClass('nav-item')
 
         if ($("#search").val()) {
             localStorage.setItem('city1', response.name)
