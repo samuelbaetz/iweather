@@ -26,9 +26,7 @@ $( document ).ready(function() {
         $('.rain').append(backDrops);
       }
 
-      var cities = [
-
-    ]
+      
 
     
     
@@ -84,14 +82,13 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
         
 
         
-        var cit = JSON.parse(localStorage.getItem("cities"));
+        
         $('.newcity').append().addClass('nav-item city')
         
-       $('.city').append(`<button type="button" class="btn btn-success loc">${response.name}</button>`)
-        cities.push(`<button type="button" class="btn btn-success loc">${response.name}</button>`)
-        localStorage.setItem("cities", JSON.stringify(cities))
-        console.log(cit)
-        
+       var city = $('.city').append(`<button type="button" class="btn btn-success loc">${response.name}</button>`)
+       
+       localStorage.setItem('cities', city);
+       localStorage.getItem('cities')
         
         
 
