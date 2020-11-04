@@ -124,7 +124,7 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
             $(".date4").html(response.list[23].dt_txt)
             $(".date5").html(response.list[31].dt_txt)
 
-            $(".hum1").text('what')
+            $(".hum1").text("Humidity: " + response.list[0].main.humidity + "%")
             $(".windspeed1").text("Wind Speed: " + response.list[0].wind.speed + " MPH")
 
             $(".hum2").text("Humidity: " + response.list[7].main.humidity + "%")
