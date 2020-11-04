@@ -30,7 +30,7 @@ $( document ).ready(function() {
 
     ]
 
-    
+    var cities = JSON.parse(localStorage.getItem("cities"));  
     
     
     
@@ -84,7 +84,7 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
         
 
         
-        var cities = JSON.parse(localStorage.getItem("cities"));
+        
         
         cities.push(newcity)
         localStorage.setItem("cities", JSON.stringify(cities))
