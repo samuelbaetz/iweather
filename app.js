@@ -383,7 +383,7 @@ var layerControl = L.control.layers(overlayMaps).addTo(mymap);
       }
 
       
-        $("#city1").text(city1)
+        
 
         $(".radarbutton").on("click", function(){
             navigator.geolocation.getCurrentPosition(showPosition)
