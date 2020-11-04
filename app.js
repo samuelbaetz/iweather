@@ -76,15 +76,14 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
         // }).addTo(mymap);
         
 
-        if ($("#search").val()) {
+        if ($("#search").val() === city1) {
             localStorage.setItem('city1', response.name)
         var city1 = localStorage.getItem('city1')
         $('.newcity').append(`<li class="nav-item city1"></li>`)
         
             $('.city1').append(`<a class="nav-link" href="#">${city1}</a>`)
         
-        }   
-        if ($("#search").val() === city1) {
+        } else {
             localStorage.setItem('city2', response.name)
             var city2 = localStorage.getItem('city2')
             $('.newcity').append(`<li class="nav-item city2"></li>`)
