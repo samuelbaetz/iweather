@@ -87,7 +87,7 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
         if ($("#search").val() !== city1) {
             localStorage.setItem('city2', response.name)
             var city2 = localStorage.getItem('city2')
-            $('.newcity').append(`<li class="nav-item city2"></li>`)
+            
         
             $('.city2').append(`<a class="nav-link" href="#">${city2}</a>`)
 
