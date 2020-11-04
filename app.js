@@ -75,13 +75,17 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
         // accessToken: 'pk.eyJ1Ijoic2FtdWVsYmFldHoiLCJhIjoiY2tnazU0aXJuMGpsMDJ0cWVqNnMyOHk1cyJ9.QIb_1jwmN4U4CkHqzIIAgg'
         // }).addTo(mymap);
         
+        var cities = {
 
+        }
         
             localStorage.setItem('city1', response.name)
         var city1 = localStorage.getItem('city1')
+        city1.push(cities)
+        console.log(cities)
         $('.newcity').append().addClass('nav-item city')
         
-            $('.city').append(`<button type="button" class="btn btn-success">${city1}</button>`)
+            $('.city').append(`<button type="button" class="btn btn-success loc">${city1}</button>`)
         
         
 
