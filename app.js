@@ -74,12 +74,12 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
         // zoomOffset: -1,
         // accessToken: 'pk.eyJ1Ijoic2FtdWVsYmFldHoiLCJhIjoiY2tnazU0aXJuMGpsMDJ0cWVqNnMyOHk1cyJ9.QIb_1jwmN4U4CkHqzIIAgg'
         // }).addTo(mymap);
-        $('.newcity').append("<li> Test </li>").addClass("nav-item")
+        
 
         if ($("#search").val()) {
             localStorage.setItem('city1', response.name)
         var city1 = localStorage.getItem('city1')
-        
+        $('.newcity').append("<li>" + city1 + "</li>")
 
         
         }   
