@@ -47,7 +47,7 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
 
         console.log(response)
         var iconCode = response.weather[0].icon;
-        var iconUrl = "http://openweathermap.org/img/w/" + iconCode + ".png";
+        var iconUrl = "https://openweathermap.org/img/w/" + iconCode + ".png";
         console.log(iconUrl)
         $(".icon").attr("src", iconUrl);
         console.log(iconCode)
@@ -111,12 +111,12 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
             console.log(response)
             console.log(response.list[0].weather[0].icon )
             $(".location").html(response.city.name)
-            $(".icon1").attr("src", "http://openweathermap.org/img/w/" + response.list[0].weather[0].icon + ".png");
-            $(".icon2").attr("src", "http://openweathermap.org/img/w/" + response.list[7].weather[0].icon + ".png");
+            $(".icon1").attr("src", "https://openweathermap.org/img/w/" + response.list[0].weather[0].icon + ".png");
+            $(".icon2").attr("src", "https://openweathermap.org/img/w/" + response.list[7].weather[0].icon + ".png");
 
-            $(".icon3").attr("src", "http://openweathermap.org/img/w/" + response.list[15].weather[0].icon + ".png");
-            $(".icon4").attr("src", "http://openweathermap.org/img/w/" + response.list[23].weather[0].icon + ".png");
-            $(".icon5").attr("src", "http://openweathermap.org/img/w/" + response.list[31].weather[0].icon + ".png");
+            $(".icon3").attr("src", "https://openweathermap.org/img/w/" + response.list[15].weather[0].icon + ".png");
+            $(".icon4").attr("src", "https://openweathermap.org/img/w/" + response.list[23].weather[0].icon + ".png");
+            $(".icon5").attr("src", "https://openweathermap.org/img/w/" + response.list[31].weather[0].icon + ".png");
 
             $(".date1").html(response.list[0].dt_txt)
             $(".date2").html(response.list[7].dt_txt)
@@ -207,12 +207,12 @@ $("#loc").on("click", function(event){
                     console.log(response)
                     console.log(response.list[0].weather[0].icon )
                     $(".location").html(response.city.name)
-                    $(".icon1").attr("src", "http://openweathermap.org/img/w/" + response.list[0].weather[0].icon + ".png");
-                    $(".icon2").attr("src", "http://openweathermap.org/img/w/" + response.list[7].weather[0].icon + ".png");
+                    $(".icon1").attr("src", "https://openweathermap.org/img/w/" + response.list[0].weather[0].icon + ".png");
+                    $(".icon2").attr("src", "https://openweathermap.org/img/w/" + response.list[7].weather[0].icon + ".png");
 
-                    $(".icon3").attr("src", "http://openweathermap.org/img/w/" + response.list[15].weather[0].icon + ".png");
-                    $(".icon4").attr("src", "http://openweathermap.org/img/w/" + response.list[23].weather[0].icon + ".png");
-                    $(".icon5").attr("src", "http://openweathermap.org/img/w/" + response.list[31].weather[0].icon + ".png");
+                    $(".icon3").attr("src", "https://openweathermap.org/img/w/" + response.list[15].weather[0].icon + ".png");
+                    $(".icon4").attr("src", "https://openweathermap.org/img/w/" + response.list[23].weather[0].icon + ".png");
+                    $(".icon5").attr("src", "https://openweathermap.org/img/w/" + response.list[31].weather[0].icon + ".png");
 
                     $(".date1").html(response.list[0].dt_txt)
                     $(".date2").html(response.list[7].dt_txt)
@@ -313,12 +313,12 @@ $(window).on('load', function(event) {
                     console.log(response)
                     console.log(response.list[0].weather[0].icon )
                     $(".location").html(response.city.name)
-                    $(".icon1").attr("src", "http://openweathermap.org/img/w/" + response.list[0].weather[0].icon + ".png");
-                    $(".icon2").attr("src", "http://openweathermap.org/img/w/" + response.list[7].weather[0].icon + ".png");
+                    $(".icon1").attr("src", "https://openweathermap.org/img/w/" + response.list[0].weather[0].icon + ".png");
+                    $(".icon2").attr("src", "https://openweathermap.org/img/w/" + response.list[7].weather[0].icon + ".png");
 
-                    $(".icon3").attr("src", "http://openweathermap.org/img/w/" + response.list[15].weather[0].icon + ".png");
-                    $(".icon4").attr("src", "http://openweathermap.org/img/w/" + response.list[23].weather[0].icon + ".png");
-                    $(".icon5").attr("src", "http://openweathermap.org/img/w/" + response.list[31].weather[0].icon + ".png");
+                    $(".icon3").attr("src", "https://openweathermap.org/img/w/" + response.list[15].weather[0].icon + ".png");
+                    $(".icon4").attr("src", "https://openweathermap.org/img/w/" + response.list[23].weather[0].icon + ".png");
+                    $(".icon5").attr("src", "https://openweathermap.org/img/w/" + response.list[31].weather[0].icon + ".png");
 
                     $(".date1").html(response.list[0].dt_txt)
                     $(".date2").html(response.list[7].dt_txt)
