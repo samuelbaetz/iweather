@@ -30,7 +30,7 @@ $( document ).ready(function() {
 
     ]
 
-    var cities = JSON.parse(localStorage.getItem("cities"));  
+    var cit = JSON.parse(localStorage.getItem("cities"));  
     
     
     
@@ -88,7 +88,7 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
         
         cities.push(response.name)
         localStorage.setItem("cities", JSON.stringify(cities))
-        console.log(cities)
+        console.log(cit)
         $('.newcity').append().addClass('nav-item city')
         
         $('.city').append(`<button type="button" class="btn btn-success loc">${response.name}</button>`)
