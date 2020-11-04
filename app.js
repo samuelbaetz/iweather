@@ -111,33 +111,33 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
             console.log(response)
             console.log(response.list[0].weather[0].icon )
             $(".location").html(response.city.name)
-            $("#icon1").attr("src", "http://openweathermap.org/img/w/" + response.list[0].weather[0].icon + ".png");
-            $("#icon2").attr("src", "http://openweathermap.org/img/w/" + response.list[7].weather[0].icon + ".png");
+            $(".icon1").attr("src", "http://openweathermap.org/img/w/" + response.list[0].weather[0].icon + ".png");
+            $(".icon2").attr("src", "http://openweathermap.org/img/w/" + response.list[7].weather[0].icon + ".png");
 
-            $("#icon3").attr("src", "http://openweathermap.org/img/w/" + response.list[15].weather[0].icon + ".png");
-            $("#icon4").attr("src", "http://openweathermap.org/img/w/" + response.list[23].weather[0].icon + ".png");
-            $("#icon5").attr("src", "http://openweathermap.org/img/w/" + response.list[31].weather[0].icon + ".png");
+            $(".icon3").attr("src", "http://openweathermap.org/img/w/" + response.list[15].weather[0].icon + ".png");
+            $(".icon4").attr("src", "http://openweathermap.org/img/w/" + response.list[23].weather[0].icon + ".png");
+            $(".icon5").attr("src", "http://openweathermap.org/img/w/" + response.list[31].weather[0].icon + ".png");
 
-            $("#date1").html(response.list[0].dt_txt)
-            $("#date2").html(response.list[7].dt_txt)
-            $("#date3").html(response.list[15].dt_txt)
-            $("#date4").html(response.list[23].dt_txt)
-            $("#date5").html(response.list[31].dt_txt)
+            $(".date1").html(response.list[0].dt_txt)
+            $(".date2").html(response.list[7].dt_txt)
+            $(".date3").html(response.list[15].dt_txt)
+            $(".date4").html(response.list[23].dt_txt)
+            $(".date5").html(response.list[31].dt_txt)
 
-            $("#hum1").html("Humidity: " + response.list[0].main.humidity + "%")
-            $("#windspeed1").html("Wind Speed: " + response.list[0].wind.speed + " MPH")
+            $(".hum1").html("Humidity: " + response.list[0].main.humidity + "%")
+            $(".windspeed1").html("Wind Speed: " + response.list[0].wind.speed + " MPH")
 
-            $("#hum2").html("Humidity: " + response.list[7].main.humidity + "%")
-            $("#windspeed2").html("Wind Speed: " + response.list[7].wind.speed + " MPH")
+            $(".hum2").html("Humidity: " + response.list[7].main.humidity + "%")
+            $(".windspeed2").html("Wind Speed: " + response.list[7].wind.speed + " MPH")
 
-            $("#hum3").html("Humidity: " + response.list[15].main.humidity + "%")
-            $("#windspeed3").html("Wind Speed: " + response.list[15].wind.speed + " MPH")
+            $(".hum3").html("Humidity: " + response.list[15].main.humidity + "%")
+            $(".windspeed3").html("Wind Speed: " + response.list[15].wind.speed + " MPH")
 
-            $("#hum4").html("Humidity: " + response.list[23].main.humidity + "%")
-            $("#windspeed4").html("Wind Speed: " + response.list[23].wind.speed + " MPH")
+            $(".hum4").html("Humidity: " + response.list[23].main.humidity + "%")
+            $(".windspeed4").html("Wind Speed: " + response.list[23].wind.speed + " MPH")
 
-            $("#hum5").html("Humidity: " + response.list[31].main.humidity + "%")
-            $("#windspeed5").html("Wind Speed: " + response.list[31].wind.speed + " MPH")
+            $(".hum5").html("Humidity: " + response.list[31].main.humidity + "%")
+            $(".windspeed5").html("Wind Speed: " + response.list[31].wind.speed + " MPH")
         });
         
 });
@@ -207,33 +207,33 @@ $("#loc").on("click", function(event){
                     console.log(response)
                     console.log(response.list[0].weather[0].icon )
                     $(".location").html(response.city.name)
-                    $("#icon1").attr("src", "http://openweathermap.org/img/w/" + response.list[0].weather[0].icon + ".png");
-                    $("#icon2").attr("src", "http://openweathermap.org/img/w/" + response.list[7].weather[0].icon + ".png");
+                    $(".icon1").attr("src", "http://openweathermap.org/img/w/" + response.list[0].weather[0].icon + ".png");
+                    $(".icon2").attr("src", "http://openweathermap.org/img/w/" + response.list[7].weather[0].icon + ".png");
 
-                    $("#icon3").attr("src", "http://openweathermap.org/img/w/" + response.list[15].weather[0].icon + ".png");
-                    $("#icon4").attr("src", "http://openweathermap.org/img/w/" + response.list[23].weather[0].icon + ".png");
-                    $("#icon5").attr("src", "http://openweathermap.org/img/w/" + response.list[31].weather[0].icon + ".png");
+                    $(".icon3").attr("src", "http://openweathermap.org/img/w/" + response.list[15].weather[0].icon + ".png");
+                    $(".icon4").attr("src", "http://openweathermap.org/img/w/" + response.list[23].weather[0].icon + ".png");
+                    $(".icon5").attr("src", "http://openweathermap.org/img/w/" + response.list[31].weather[0].icon + ".png");
 
-                    $("#date1").html(response.list[0].dt_txt)
-                    $("#date2").html(response.list[7].dt_txt)
-                    $("#date3").html(response.list[15].dt_txt)
-                    $("#date4").html(response.list[23].dt_txt)
-                    $("#date5").html(response.list[31].dt_txt)
+                    $(".date1").html(response.list[0].dt_txt)
+                    $(".date2").html(response.list[7].dt_txt)
+                    $(".date3").html(response.list[15].dt_txt)
+                    $(".date4").html(response.list[23].dt_txt)
+                    $(".date5").html(response.list[31].dt_txt)
 
-                    $("#hum1").html("Humidity: " + response.list[0].main.humidity + "%")
-                    $("#windspeed1").html("Wind Speed: " + response.list[0].wind.speed + " MPH")
+                    $(".hum1").html("Humidity: " + response.list[0].main.humidity + "%")
+                    $(".windspeed1").html("Wind Speed: " + response.list[0].wind.speed + " MPH")
 
-                    $("#hum2").html("Humidity: " + response.list[7].main.humidity + "%")
-                    $("#windspeed2").html("Wind Speed: " + response.list[7].wind.speed + " MPH")
+                    $(".hum2").html("Humidity: " + response.list[7].main.humidity + "%")
+                    $(".windspeed2").html("Wind Speed: " + response.list[7].wind.speed + " MPH")
 
-                    $("#hum3").html("Humidity: " + response.list[15].main.humidity + "%")
-                    $("#windspeed3").html("Wind Speed: " + response.list[15].wind.speed + " MPH")
+                    $(".hum3").html("Humidity: " + response.list[15].main.humidity + "%")
+                    $(".windspeed3").html("Wind Speed: " + response.list[15].wind.speed + " MPH")
 
-                    $("#hum4").html("Humidity: " + response.list[23].main.humidity + "%")
-                    $("#windspeed4").html("Wind Speed: " + response.list[23].wind.speed + " MPH")
+                    $(".hum4").html("Humidity: " + response.list[23].main.humidity + "%")
+                    $(".windspeed4").html("Wind Speed: " + response.list[23].wind.speed + " MPH")
 
-                    $("#hum5").html("Humidity: " + response.list[31].main.humidity + "%")
-                    $("#windspeed5").html("Wind Speed: " + response.list[31].wind.speed + " MPH")
+                    $(".hum5").html("Humidity: " + response.list[31].main.humidity + "%")
+                    $(".windspeed5").html("Wind Speed: " + response.list[31].wind.speed + " MPH")
                 });
 
 
@@ -313,47 +313,47 @@ $(window).on('load', function() {
                     console.log(response)
                     console.log(response.list[0].weather[0].icon )
                     $(".location").html(response.city.name)
-                    $("#icon1").attr("src", "http://openweathermap.org/img/w/" + response.list[0].weather[0].icon + ".png");
-                    $("#icon2").attr("src", "http://openweathermap.org/img/w/" + response.list[7].weather[0].icon + ".png");
+                    $(".icon1").attr("src", "http://openweathermap.org/img/w/" + response.list[0].weather[0].icon + ".png");
+                    $(".icon2").attr("src", "http://openweathermap.org/img/w/" + response.list[7].weather[0].icon + ".png");
 
-                    $("#icon3").attr("src", "http://openweathermap.org/img/w/" + response.list[15].weather[0].icon + ".png");
-                    $("#icon4").attr("src", "http://openweathermap.org/img/w/" + response.list[23].weather[0].icon + ".png");
-                    $("#icon5").attr("src", "http://openweathermap.org/img/w/" + response.list[31].weather[0].icon + ".png");
+                    $(".icon3").attr("src", "http://openweathermap.org/img/w/" + response.list[15].weather[0].icon + ".png");
+                    $(".icon4").attr("src", "http://openweathermap.org/img/w/" + response.list[23].weather[0].icon + ".png");
+                    $(".icon5").attr("src", "http://openweathermap.org/img/w/" + response.list[31].weather[0].icon + ".png");
 
-                    $("#date1").html(response.list[0].dt_txt)
-                    $("#date2").html(response.list[7].dt_txt)
-                    $("#date3").html(response.list[15].dt_txt)
-                    $("#date4").html(response.list[23].dt_txt)
-                    $("#date5").html(response.list[31].dt_txt)
+                    $(".date1").html(response.list[0].dt_txt)
+                    $(".date2").html(response.list[7].dt_txt)
+                    $(".date3").html(response.list[15].dt_txt)
+                    $(".date4").html(response.list[23].dt_txt)
+                    $(".date5").html(response.list[31].dt_txt)
 
                     var tempF1 = (response.list[0].main.temp - 273.15) * 1.80 + 32;
-                    $("#temp1").html(tempF1.toFixed() + "F " + " degrees")
+                    $(".temp1").html(tempF1.toFixed() + "F " + " degrees")
 
                     var tempF2 = (response.list[7].main.temp - 273.15) * 1.80 + 32;
-                    $("#temp2").html(tempF2.toFixed() + "F " + " degrees")
+                    $(".temp2").html(tempF2.toFixed() + "F " + " degrees")
 
                     var tempF3 = (response.list[15].main.temp - 273.15) * 1.80 + 32;
-                    $("#temp3").html(tempF3.toFixed() + "F " + " degrees")
+                    $(".temp3").html(tempF3.toFixed() + "F " + " degrees")
 
                     var tempF4 = (response.list[23].main.temp - 273.15) * 1.80 + 32;
-                    $("#temp4").html(tempF4.toFixed() + "F " + " degrees")
+                    $(".temp4").html(tempF4.toFixed() + "F " + " degrees")
                     var tempF5 = (response.list[31].main.temp - 273.15) * 1.80 + 32;
-                    $("#temp5").html(tempF5.toFixed() + "F " + " degrees")
+                    $(".temp5").html(tempF5.toFixed() + "F " + " degrees")
 
-                    $("#hum1").html("Humidity: " + response.list[0].main.humidity + "%")
-                    $("#windspeed1").html("Wind Speed: " + response.list[0].wind.speed + " MPH")
+                    $(".hum1").html("Humidity: " + response.list[0].main.humidity + "%")
+                    $(".windspeed1").html("Wind Speed: " + response.list[0].wind.speed + " MPH")
 
-                    $("#hum2").html("Humidity: " + response.list[7].main.humidity + "%")
-                    $("#windspeed2").html("Wind Speed: " + response.list[7].wind.speed + " MPH")
+                    $(".hum2").html("Humidity: " + response.list[7].main.humidity + "%")
+                    $(".windspeed2").html("Wind Speed: " + response.list[7].wind.speed + " MPH")
 
-                    $("#hum3").html("Humidity: " + response.list[15].main.humidity + "%")
-                    $("#windspeed3").html("Wind Speed: " + response.list[15].wind.speed + " MPH")
+                    $(".hum3").html("Humidity: " + response.list[15].main.humidity + "%")
+                    $(".windspeed3").html("Wind Speed: " + response.list[15].wind.speed + " MPH")
 
-                    $("#hum4").html("Humidity: " + response.list[23].main.humidity + "%")
+                    $(".hum4").html("Humidity: " + response.list[23].main.humidity + "%")
                     $("#windspeed4").html("Wind Speed: " + response.list[23].wind.speed + " MPH")
 
-                    $("#hum5").html("Humidity: " + response.list[31].main.humidity + "%")
-                    $("#windspeed5").html("Wind Speed: " + response.list[31].wind.speed + " MPH")
+                    $(".hum5").html("Humidity: " + response.list[31].main.humidity + "%")
+                    $(".windspeed5").html("Wind Speed: " + response.list[31].wind.speed + " MPH")
                 });
 
                 var mymap = L.map('mapid').setView([lat, lon], 13);
