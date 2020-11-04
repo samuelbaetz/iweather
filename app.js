@@ -75,9 +75,11 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
         // accessToken: 'pk.eyJ1Ijoic2FtdWVsYmFldHoiLCJhIjoiY2tnazU0aXJuMGpsMDJ0cWVqNnMyOHk1cyJ9.QIb_1jwmN4U4CkHqzIIAgg'
         // }).addTo(mymap);
         
-        var cities = {
+        var cities = [
+            
+        ]
 
-        }
+        
         
             localStorage.setItem('city1', response.name)
         var city1 = localStorage.getItem('city1')
