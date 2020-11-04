@@ -49,17 +49,17 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
         var iconCode = response.weather[0].icon;
         var iconUrl = "http://openweathermap.org/img/w/" + iconCode + ".png";
         console.log(iconUrl)
-        $("#icon").attr("src", iconUrl);
+        $(".icon").attr("src", iconUrl);
         console.log(iconCode)
-        $("#test").html(response.name)
+        $(".test").html(response.name)
         var hum = response.main.humidity
                 var wind = response.wind.speed
         var tempF = (response.main.temp - 273.15) * 1.80 + 32;
         var temp = $("<h3>").text(tempF.toFixed() + " degrees")
-        var content = $("#test");
-        $("#hum").text("Humidity: " + hum + "%")
-        $("#windspeed").html("Wind Speed: " + wind + " MPH")
-        var content = $("#test");
+        var content = $(".test");
+        $(".hum").text("Humidity: " + hum + "%")
+        $(".windspeed").html("Wind Speed: " + wind + " MPH")
+        var content = $(".test");
         // var lat = response.coord.lat
         // var lon = response.coord.lon
         // console.log(lat, lon)
