@@ -76,14 +76,14 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
         // }).addTo(mymap);
         
         var cities = [
-            
+
         ]
 
         
         
             localStorage.setItem('city1', response.name)
         var city1 = localStorage.getItem('city1')
-        city1.push(cities)
+        cities.push(city1)
         console.log(cities)
         $('.newcity').append().addClass('nav-item city')
         
