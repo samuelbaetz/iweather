@@ -29,9 +29,9 @@ $( document ).ready(function() {
     
     
 
-$("#click").on("click", function(){
+$("#click").on("click", function(event){
     
-
+event.preventDefault()
 
 var APIKey = "166a433c57516f51dfab1f7edaed8413";
 
@@ -144,9 +144,9 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
 
 
 
-$("#loc").on("click", function(){
+$("#loc").on("click", function(event){
 
-    
+    event.preventDefault()
     
     navigator.geolocation.getCurrentPosition(showPosition)
 
