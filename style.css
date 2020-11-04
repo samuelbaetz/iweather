@@ -123,3 +123,7 @@
     
     background: linear-gradient(to bottom, #202020, #111119);
   }
+
+  .btn-success {
+    margin-left: 10px;
+  }
