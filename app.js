@@ -26,7 +26,9 @@ $( document ).ready(function() {
         $('.rain').append(backDrops);
       }
 
-      
+      var cities = [
+
+    ]
 
     
     
@@ -82,13 +84,15 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
         
 
         
-        
+        var cit = JSON.parse(localStorage.getItem("cities"));
         $('.newcity').append().addClass('nav-item city')
         
-       var city = $('.city').append(`<button type="button" class="btn btn-success loc">${response.name}</button>`)
-       
-       localStorage.setItem('cities', city);
-      
+        var city = $('.city').append(`<button type="button" class="btn btn-success loc">${response.name}</button>`)
+        cities.push(city)
+        localStorage.setItem("cities", JSON.stringify(cities))
+        console.log(cit)
+        
+        
         
 
         if(response.weather[0].main === "Rain") {
@@ -251,11 +255,7 @@ $("#loc").on("click", function(event){
 
 
     
-    var saved = localStorage.getItem('cities')
         
-    if (saved) {
-     $('.newcity') = saved;
- }  
 
     
     
