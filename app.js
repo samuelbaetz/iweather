@@ -87,7 +87,7 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
         console.log(cities)
         $('.newcity').append().addClass('nav-item city')
         
-            $('.city').append(`<button type="button" class="btn btn-success loc">${city1}</button>`)
+            $('.city').append(`<button type="button" class="btn btn-success loc">${response.name}</button>`)
         
         
 
