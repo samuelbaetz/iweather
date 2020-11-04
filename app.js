@@ -76,14 +76,18 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
         // }).addTo(mymap);
         
 
-        if ($("#search").val()) {
-            localStorage.setItem('city1', response.name)
-        var city1 = localStorage.getItem('city1')
-        $('.newcity').append(`<li class="nav-item city1"></li>`)
+        // if ($("#search").val()) {
+        //     localStorage.setItem('city1', response.name)
+        // var city1 = localStorage.getItem('city1')
+        // $('.newcity').append(`<li class="nav-item city1"></li>`)
         
-            $('.city1').append(`<a class="nav-link" href="#">${city1}</a>`)
+        //     $('.city1').append(`<a class="nav-link" href="#">${city1}</a>`)
         
-        } 
+        // } 
+
+        $('.newcity').append($('<li>', {
+            text: $("#search").val()
+       }));
 
         if(response.weather[0].main === "Rain") {
             makeItRain()
