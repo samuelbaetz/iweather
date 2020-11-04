@@ -75,20 +75,20 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
         // accessToken: 'pk.eyJ1Ijoic2FtdWVsYmFldHoiLCJhIjoiY2tnazU0aXJuMGpsMDJ0cWVqNnMyOHk1cyJ9.QIb_1jwmN4U4CkHqzIIAgg'
         // }).addTo(mymap);
         
-       
 
-        if ($("#search").val() === city1) {
+        if ($("#search").val()) {
             localStorage.setItem('city1', response.name)
         var city1 = localStorage.getItem('city1')
-        
-        $("#city1").text(city1)
+        $('newcity').add('li').addClass('nav-item')
             
-        } else {
-            localStorage.setItem('city2', response.name)
-            var city2 = localStorage.getItem('city2')
-            $("#city2").text(city2)
+        
+        }   
+        // } else {
+        //     localStorage.setItem('city2', response.name)
+        //     var city2 = localStorage.getItem('city2')
+        //     $("#city2").text(city2)
 
-        }
+        // }
 
         if(response.weather[0].main === "Rain") {
             makeItRain()
@@ -172,7 +172,7 @@ $("#loc").on("click", function(event){
         
                 console.log(response)
                 var iconCode = response.weather[0].icon;
-        var iconUrl = "http://openweathermap.org/img/w/" + iconCode + ".png";
+        var iconUrl = "https://openweathermap.org/img/w/" + iconCode + ".png";
         console.log(iconUrl)
         $(".icon").attr("src", iconUrl);
                 $(".test").html(response.name)
