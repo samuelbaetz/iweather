@@ -84,7 +84,7 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
         
 
         
-        var storedcities = JSON.parse(localStorage.getItem("cities"));
+        var storedcities = localStorage.getItem("cities");
         //     localStorage.setItem('city1', response.name)
         // var city1 = localStorage.getItem('city1')
         cities.push(response.name)
