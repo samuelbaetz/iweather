@@ -258,8 +258,8 @@ $("#loc").on("click", function(event){
 
 });
 
-$(window).on('load', function() { 
-      
+$(window).on('load', function(event) { 
+      event.preventDefault()
     navigator.geolocation.getCurrentPosition(showPosition)
 
     function showPosition(position) {
