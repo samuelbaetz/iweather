@@ -1,4 +1,4 @@
-$(window).on('load', function() { 
+$( document ).ready(function() {
 
     var drops = "";
     var backDrops = "";
@@ -256,8 +256,9 @@ $("#loc").on("click", function(){
     
     
 
+});
 
-
+$(window).on('load', function() { 
       
     navigator.geolocation.getCurrentPosition(showPosition)
 
