@@ -32,6 +32,12 @@ $( document ).ready(function() {
 
     var cit = JSON.parse(localStorage.getItem("cities"));  
     
+    if(cit) {
+        $('.newcity').append().addClass('nav-item city')
+        
+        $('.city').append(`<button type="button" class="btn btn-success loc">${cities[0]}</button>`)
+
+    }
     
     
 
