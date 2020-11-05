@@ -33,10 +33,11 @@ $( document ).ready(function() {
     var cit = JSON.parse(localStorage.getItem("cities"));  
     
     if(cit) {
+        for(i=0; i < cit.length; i++){
         $('.newcity').append().addClass('nav-item city')
         
-        $('.city').append(`<button type="button" class="btn btn-success loc">${cit[0]}</button>`)
-
+        $('.city').append(`<button type="button" class="btn btn-success loc">${cit[i]}</button>`)
+        }
     }
     
     
