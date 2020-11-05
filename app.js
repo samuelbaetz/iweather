@@ -39,10 +39,10 @@ $( document ).ready(function() {
         $('.city').append(`<button type="button" class="btn btn-success loc">${cit[i]}</button>`)
         }
     }
-    
+    for(i=0; i < cit.length; i++){
     $(".loc").on("click", function(event){
         event.preventDefault()
-        for(i=0; i < cit.length; i++){
+        
         var APIKey = "166a433c57516f51dfab1f7edaed8413";
 
         var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
@@ -112,9 +112,9 @@ $( document ).ready(function() {
                     $(".hum5").text("Humidity: " + response.list[31].main.humidity + "%")
                     $(".windspeed5").text("Wind Speed: " + response.list[31].wind.speed + " MPH")
                 });
-            }
+            
     })
-
+    }
 
 
 
