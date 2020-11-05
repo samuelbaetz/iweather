@@ -47,7 +47,7 @@ $( document ).ready(function() {
 
         var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
           "q=" + cit[i] + "&appid=" + APIKey;
-        }
+        
           $.ajax({
             url: queryURL,
             method: "GET"
@@ -112,7 +112,7 @@ $( document ).ready(function() {
                     $(".hum5").text("Humidity: " + response.list[31].main.humidity + "%")
                     $(".windspeed5").text("Wind Speed: " + response.list[31].wind.speed + " MPH")
                 });
-
+            }
     })
 
 
