@@ -35,7 +35,7 @@ $( document ).ready(function() {
     if(cit) {
         $('.newcity').append().addClass('nav-item city')
         
-        $('.city').append(`<button type="button" class="btn btn-success loc">${cities[0]}</button>`)
+        $('.city').append(`<button type="button" class="btn btn-success loc">${cit[0]}</button>`)
 
     }
     
