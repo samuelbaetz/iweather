@@ -29,6 +29,7 @@ $( document ).ready(function() {
       var cities = [
 
     ]
+    var x;
 
     var cit = JSON.parse(localStorage.getItem("cities"));  
     
@@ -42,11 +43,11 @@ $( document ).ready(function() {
     
     $(".loc").on("click", function(event){
         event.preventDefault()
-        for(i=0; i < cit.length; i++){
+        for(x of cit){
         var APIKey = "166a433c57516f51dfab1f7edaed8413";
 
         var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
-          "q=" + cit[i] + "&appid=" + APIKey;
+          "q=" + cit[x] + "&appid=" + APIKey;
         
           $.ajax({
             url: queryURL,
