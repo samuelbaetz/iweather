@@ -7,3 +7,5 @@
 
 - Uses Openweather API, HTML5 Geolocation API
 ![demo](demo.gif)
+
+### Deployed App (https://samuelbaetz.github.io/iweather/?)
